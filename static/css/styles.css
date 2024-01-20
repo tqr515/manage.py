@@ -1,0 +1,319 @@
+@font-face {
+    font-family: 'Ubuntu-Regular';
+    src: local('Ubuntu-Regular'), url(../fonts/Ubuntu-Regular.ttf);
+}
+
+html {
+    padding: 0;
+    margin: 0;
+    background: #E5BACE;
+}
+
+body {
+    margin-top: 3.5%;
+    border-radius: 50px;
+    border: 1px solid #EF0D50;
+    background: #E1F2F7;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.25) inset;
+    height: 85vh;
+}
+
+header {
+    position: absolute;
+    width: 50%;
+    bottom: 93%;
+    height: 50px;
+    border-radius: 50px 50px 0px 0px;
+    border: 5px solid #EF0D50;
+    background: linear-gradient(0deg, #E1F2F7 0%, rgba(225, 242, 247, 0.00) 100%);
+    z-index: 2;
+    text-align: center;
+    margin-left: 25%;
+    font-family: Ubuntu-Regular;
+    color: #EF0D50 !important;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+header p {
+    margin-top: 1%;
+    margin-right: 80%;
+}
+
+footer {
+    width: 30%;
+    margin-left: 35%;
+    border-radius: 0px 0px 50px 50px;
+    border: 3px solid #EF0D50;
+    background: linear-gradient(180deg, #E1F2F7 0%, rgba(225, 242, 247, 0.00) 100%);
+    height: 60px;
+    position: absolute;
+    top: 142%;
+    display: flex;
+    align-items: center;
+}
+
+footer p {
+    color: #EF0D50;
+    font-family: "Ubuntu-Regular";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    position: absolute;
+    margin-left: 27.5%;
+}
+
+
+a {
+    color: #F64C72 !important;
+    text-decoration: none
+}
+
+
+.logo {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 50px;
+    top: 5px
+}
+
+
+
+.navigation {
+    margin-top: 175px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 325px;
+    height: 65%;
+    left: 10px;
+    top: 0px;
+    z-index: 1;
+    background: transparent;
+}
+
+.nav_text {
+    font-family: "Ubuntu-Regular";
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    left: 35px;
+    color: #A8E4A0;
+
+}
+
+.nav_text_foot {
+    font-family: "Ubuntu-Regular";
+    font-size: 20px;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: #A8E4A0;
+}
+
+.navigation ul {
+    text-align: left;
+    list-style: none;
+    padding-top: 15%;
+}
+
+.navigation li {
+    margin: 0px -30px;
+    font-family: "Ubuntu-Regular";
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.navigation li div{
+    width: 310px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-radius: 0px 50px 50px 0px;
+
+}
+
+.navigation li div:hover{
+    margin-left: 5%;
+}
+
+.navigation li a {
+    color: #E5BACE !important;
+    margin-left: 10px;/*ЦВЕТ ТЕКСТА МЕНЮ*/
+}
+
+
+
+.foot{
+    position: absolute;
+    font-family: 'Ubuntu-Regular';
+    font-size: 19px;
+    text-align: center;
+    color: #EF0D50;
+    bottom: 10px;
+    left: 300px;
+}
+
+.home_text {
+    position: absolute;
+    left: 350px;
+    top: 80px;
+}
+
+.home_text p {
+    font-size: 15px;
+    font-family: 'Ubuntu-Regular';
+    color: #EF0D50;
+    text-wrap: normal;
+}
+
+.home_text h3 {
+    text-align: center;
+    font-family: 'Ubuntu-Regular';
+    color: #EF0D50;
+}
+
+.home_text li {
+    font-family: 'Ubuntu-Regular';
+    color: #EF0D50;
+}
+
+.home_text h1 {
+    font-family: 'Ubuntu-Regular';
+    width: 300px;
+    color: #EF0D50;
+    font-size: 20px;
+}
+
+.home_img {
+    position:absolute;
+    width: 225px;
+    height: 150px;
+    right: 3%;
+    top: 75px;
+}
+
+ .empty {
+     height: 60px;
+ }
+
+.demand_graph_1 {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    left: 20px;
+    top: 0px;
+}
+
+.demand_graph_2 {
+    width: 400px;
+    height: 300px;
+    left: 20px;
+    position: absolute;
+    top: 300px
+}
+
+.tables {
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: flex-start;
+    position: absolute;
+    left: 500px;
+    top: 50px
+}
+
+.tables table {
+    color: #EF0D50;
+}
+
+.geography_graph {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    left: 20px;
+    top: 50px;
+}
+
+
+.graph_title1 {
+    font-family: "Ubuntu-Regular";
+    position: absolute;
+    z-index: 999999;
+    color: #EF0D50;
+    top: -45px;
+    left: 120px;
+    width: 300px;
+}
+
+.graph_title2 {
+    font-family: "Ubuntu-Regular";
+    position: absolute;
+    z-index: 999999;
+    color: black;
+    left: 120px;
+    top: 290px;
+    width: 300px;
+}
+
+.tables_skills {
+    display: flex;
+
+    flex-direction: row;
+
+    position: absolute;
+    left: 10px;
+    top: 50px;
+
+}
+
+.tables_skills table {
+    color: #EF0D50;
+}
+
+.skills_graph {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    left: 400px;
+    top: 370px
+}
+
+.empty_skills {
+    height: 750px;
+}
+
+.last_text {
+    font-family: 'Ubuntu-Regular';
+    width: 600px;
+    color: #EF0D50;
+    position: absolute;
+    left: 100px;
+    top: -15px
+}
+
+.LVtable {
+    left: 300px;
+    top: 200px;
+    position: absolute;
+    color: #EF0D50;
+}
+
+.LVtable p {
+    color: #EF0D50;
+}
+
+.navigate_page {
+    color: #EF0D50;
+}
+
+.line{
+    width: 90%;
+    position: absolute;
+    height: 2px;
+    background-color: #9ED2C5;
+    margin-left: 5%;
+}

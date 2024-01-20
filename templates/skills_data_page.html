@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% for i in navigation %}
+        <title>{{ i.job_title }}</title>
+        <link rel="stylesheet" href="{% static "css/styles.css" %}">
+        </head>
+        <body style="height: 135vh">
+        <header>
+            <p>{{ i.job_title }}</p>
+            <img class="logo" src="{{ i.company_logo.url }}">
+        </header>
+        <main>
+        <div class="body">
+        <div class="input_group">
+        <div class="navigation">
+            <nav>
+                <ul>
+                    <li>
+                        <div><a href="/">{{ i.first_menu_item }}</a></div>
+                    </li>
+                    <li>
+                        <div><a href={% url 'demend' %}>{{ i.second_menu_item }}</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div><a href={% url 'geography' %}>{{ i.third_menu_item }}</a></div>
+                    </li>
+                    <li>
+                        <div style="border-radius: 0px 50px 0px 0px; background: #EF0D50; justify-content: center"><a style="color: #FFFFFF !important;" href={% url 'skills' %}>{{ i.fourth_menu_item }}</a></div>
+                    </li>
+                    <li>
+                        <div><a href={% url 'lastVacancy' %}>{{ i.fifth_menu_item }}</a></div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    {% endfor %}
+
+    <div class="home_text" style="margin-top: 150px;">
+        {% for j in context %}
+            <h1>{{ j.table_name }}</h1>
+            <div class="tables_skills">
+                {{ j.data_table|safe }}
+            </div>
+            <img class="skills_graph" src={{ j.skills_chart.url }}/>
+            <div class="empty_skills"></div>
+        {% endfor %}
+    </div>
+    </div>
+    </div>
+    </main>
+    <footer>
+        {% for nav in navigation %}
+            <p>{{ nav.creator }}</p>
+        {% endfor %}
+    </footer>
+    </body>
+</html>
